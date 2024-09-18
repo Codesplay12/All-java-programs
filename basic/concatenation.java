@@ -1,0 +1,17 @@
+import java.util.Arrays;
+
+public class concatenation
+{
+    public static void main(String[] args) {
+        int[] a = {1,2,3};
+        int[] b = {4,5,6};
+
+        int alen = a.length;
+        int blen = b.length;
+        int[] result = new int[alen + blen];
+
+        System.arraycopy(a,0, result, 0, alen);
+        System.arraycopy(b, 0, result, alen, blen);
+        System.out.println(Arrays.toString(result));
+    }
+}
